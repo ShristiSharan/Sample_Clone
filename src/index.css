@@ -1,5 +1,74 @@
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: #f0f2f5;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
+.stylish-font {
+  font-family: 'Roboto', sans-serif;
+}
+
+@keyframes moveLines {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes moveTop {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-150px);
+  }
+}
+
+@keyframes moveBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(150px);
+  }
+}
+
+@keyframes moveShadow {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animate-moveLines {
+  animation: moveLines 1s ease-out forwards;
+}
+
+.animate-moveTop {
+  animation: moveTop 1s ease-out forwards;
+}
+
+.animate-moveBottom {
+  animation: moveBottom 1s ease-out forwards;
+}
+
+.animate-moveShadow {
+  animation: moveShadow 1s ease-out forwards;
 }
