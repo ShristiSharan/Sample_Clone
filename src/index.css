@@ -15,36 +15,36 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-@keyframes moveLines {
-  0% {
-    opacity: 0;
-    transform: translateY(0);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 @keyframes moveTop {
   0% {
     opacity: 0;
-    transform: translateY(0);
+    transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
   }
   100% {
     opacity: 1;
-    transform: translateY(-150px);
+    transform: translate3d(0, -150px, 0) scale3d(1, 1, 1);
+  }
+}
+
+@keyframes moveCenter {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
   }
 }
 
 @keyframes moveBottom {
   0% {
     opacity: 0;
-    transform: translateY(0);
+    transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
   }
   100% {
     opacity: 1;
-    transform: translateY(150px);
+    transform: translate3d(0, 150px, 0) scale3d(1, 1, 1);
   }
 }
 
@@ -57,18 +57,49 @@ body {
   }
 }
 
+@keyframes moveLines {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+  }
+}
+.animate-moveTop {
+  animation: moveTop 1.5s ease-out forwards;
+}
+
 .animate-moveLines {
   animation: moveLines 1s ease-out forwards;
 }
 
 .animate-moveTop {
-  animation: moveTop 1s ease-out forwards;
+  animation: moveTop 2s ease-out forwards;
 }
 
 .animate-moveBottom {
-  animation: moveBottom 1s ease-out forwards;
+  animation: moveBottom 2s ease-out forwards;
 }
 
 .animate-moveShadow {
-  animation: moveShadow 1s ease-out forwards;
+  animation: moveShadow 2.5s ease-out forwards;
+}
+
+.animate-moveCenter {
+  animation: moveCenter 1s ease-out forwards;
+}
+
+.scale-120 {
+  transform: scale(1.2);
+}
+
+.image-container {
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+}
+
+.translate-x-6 {
+  transform: translateX(1.5rem);
 }

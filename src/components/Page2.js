@@ -2,8 +2,8 @@ import React from 'react';
 
 const Page2 = () => {
   return (
-    <div className="bg-blue-600 text-white min-h-screen p-10">
-      <div className="max-w-4xl mx-auto">
+    <div className="bg-blue-600 text-white min-h-screen p-10 ">
+      <div className="max-w-4xl mt-20 mx-auto">
         <h2 className="text-5xl font-bold mb-6">Continue Building</h2>
         <p className="text-xl mb-12">
           Keep exploring the possibilities and pushing the boundaries of decentralized governance.

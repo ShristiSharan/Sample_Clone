@@ -17,7 +17,7 @@ const Header = () => {
   };
 
   return (
-    <div className="relative flex justify-between items-center p-5 bg-blue-600 text-white">
+    <div className="fixed top-0 left-0 right-0 z-50 flex justify-between items-center p-5 bg-blue-600 text-white">
       <div className="flex items-center ml-8">
         <FaStar className="w-6 h-6 mr-2" />
         <div className="text-2xl font-bold">ARAGON</div>
