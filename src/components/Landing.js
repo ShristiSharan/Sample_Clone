@@ -74,7 +74,7 @@ const Landing = () => {
           </button>
         </div>
         {showFeedbackForm && (
-          <div className="absolute bottom-16 right-4 bg-white text-black p-6 rounded-lg shadow-lg w-96">
+          <div className="absolute top-24 right-6 bg-white text-black p-6 rounded-lg shadow-lg w-96">
             <h2 className="text-xl mb-4">Contact</h2>
             <form>
               <label className="block mb-2">Tell us, what's on your mind? *</label>
